@@ -1,12 +1,13 @@
 package com.kotlin.todolist
 
-import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
+import com.jgabrielfreitas.core.activity.BaseActivity
+import com.jgabrielfreitas.layoutid.annotations.InjectLayout
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+@InjectLayout(layout = R.layout.activity_main)
+class MainActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    override fun modifyViews() {
+        helloTextView.text = "Hello Kotlin!"
     }
 }
