@@ -21,6 +21,7 @@
         <activity
             android:name=".activities.CreateNewTaskActivity"
             android:label="@string/create_new_task" />
+        <activity android:name=".activities.EditTaskActivity"></activity>
     </application>
 
 </manifest>

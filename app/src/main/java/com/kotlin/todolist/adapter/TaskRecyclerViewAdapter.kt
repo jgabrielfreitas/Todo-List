@@ -3,6 +3,8 @@ package com.kotlin.todolist.adapter
 import android.content.Context
 
 import com.jgabrielfreitas.core.Task
+import com.kotlin.todolist.activities.MainActivity
+import com.kotlin.todolist.interfaces.OnItemClickListener
 import com.kotlin.todolist.viewholders.TaskViewHolder
 
 import uk.co.ribot.easyadapter.EasyRecyclerAdapter
@@ -13,7 +15,7 @@ import uk.co.ribot.easyadapter.ItemViewHolder
  */
 class TaskRecyclerViewAdapter : EasyRecyclerAdapter<Task> {
 
-    constructor(context: Context, taskList: List<Task>) : super(context, TaskViewHolder::class.java, taskList) {
+    constructor(context: Context, taskList: List<Task>, listener: OnItemClickListener<Task>) : super(context, TaskViewHolder::class.java, taskList, listener) {
     }
 
     constructor(context: Context, itemViewHolderClass: Class<out ItemViewHolder<*>>, listItems: List<Task>) : super(context, itemViewHolderClass, listItems) {
