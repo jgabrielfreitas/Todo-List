@@ -15,3 +15,13 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+-keepattributes InnerClasses
+-keep class io.realm.annotations.RealmModule
+-keep @io.realm.annotations.RealmModule class *
+-keep class io.realm.exceptions.* { *; }
+-keep class io.realm.internal.async.BadVersionException { *; }
+-keep class io.realm.internal.OutOfMemoryError { *; }
+-keep class io.realm.internal.TableSpec { *; }
+-keep class io.realm.internal.ColumnType { *; }
+-dontwarn javax.**
+-dontwarn io.realm.**

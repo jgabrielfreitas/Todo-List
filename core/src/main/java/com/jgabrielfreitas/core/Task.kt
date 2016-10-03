@@ -1,16 +1,18 @@
 package com.jgabrielfreitas.core
 
-import io.realm.RealmObject
-import io.realm.annotations.PrimaryKey
+import com.activeandroid.Model
+import com.activeandroid.annotation.Column
+import com.activeandroid.annotation.Table
+
 
 /**
  * Created by JGabrielFreitas on 02/10/16.
  */
-class Task: RealmObject() {
 
-    @PrimaryKey
-    var id          : Int?   = null
-    var title       : String = ""
-    var taskContent : String = ""
+@Table(name = "Task")
+class Task : Model() {
+
+    @Column(name = "TITLE")   var title   : String? = null
+    @Column(name = "CONTENT") var content : String? = null
 
 }

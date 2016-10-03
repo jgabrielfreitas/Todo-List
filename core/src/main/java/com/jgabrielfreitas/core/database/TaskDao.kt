@@ -1,15 +1,26 @@
 package com.jgabrielfreitas.core.database
 
-import android.content.Context
+import com.activeandroid.query.Select
 import com.jgabrielfreitas.core.Task
-import io.realm.RealmQuery
 
 /**
- * Created by JGabrielFreitas on 02/10/16.
+ * Created by JGabrielFreitas on 03/10/16.
  */
-class TaskDao(context: Context) : AbstractDao<Task>(context) {
+class TaskDao : Database<Task> {
 
-    override fun realmObjectClass(): Class<Task> {
-        return Task::class.java
+    override fun save(t: Task) {
+        t.save()
+    }
+
+    override fun selectAll(): List<Task> {
+        return Select().all().from(Task::class.java).execute()
+    }
+
+    override fun delete(id: Int) {
+        throw UnsupportedOperationException("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun update(id: Int) {
+        throw UnsupportedOperationException("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

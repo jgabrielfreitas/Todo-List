@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Todo-List</string>
+    <string name="tasks">Tarefas</string>
 </resources>
