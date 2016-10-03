@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Todo-List</string>
     <string name="tasks">Tarefas</string>
+    <string name="new_task">Nova tarefa</string>
+    <string name="title_task">Título da tarefa</string>
+    <string name="your_task">Sua tarefa</string>
+    <string name="create_new_task">Criar nova tarefa</string>
+    <string name="finish">Concluir</string>
 </resources>

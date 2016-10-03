@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/taskTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_default"
+        android:hint="@string/title_task"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/title_task"
+        app:met_primaryColor="@color/colorAccent" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/taskContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/taskTitleEditText"
+        android:layout_margin="@dimen/space_default"
+        android:gravity="top"
+        android:hint="@string/your_task"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/your_task"
+        app:met_hideUnderline="true"
+        app:met_primaryColor="@color/colorAccent" />
+
+</RelativeLayout>

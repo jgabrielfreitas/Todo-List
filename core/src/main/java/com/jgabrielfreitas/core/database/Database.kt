@@ -9,10 +9,10 @@ interface Database<T> {
 
     fun selectAll() : List<Task>
 
-    fun save(t: T)
+    fun save(any: T)
 
-    fun delete(id : Int)
+    fun delete(any: T)
 
-    fun update(id : Int)
+    fun update(any: T)
 
 }

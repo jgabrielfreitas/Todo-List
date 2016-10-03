@@ -8,19 +8,19 @@ import com.jgabrielfreitas.core.Task
  */
 class TaskDao : Database<Task> {
 
+    override fun delete(any: Task) {
+        any.delete()
+    }
+
+    override fun update(any: Task) {
+        any.save()
+    }
+
     override fun save(t: Task) {
         t.save()
     }
 
     override fun selectAll(): List<Task> {
         return Select().all().from(Task::class.java).execute()
-    }
-
-    override fun delete(id: Int) {
-        throw UnsupportedOperationException("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun update(id: Int) {
-        throw UnsupportedOperationException("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

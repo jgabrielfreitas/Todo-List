@@ -1,6 +1,8 @@
 package com.kotlin.todolist.activities
 
 import android.support.v7.widget.LinearLayoutManager
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.LinearLayout
 import android.widget.Toast.LENGTH_SHORT
 import android.widget.Toast.makeText
@@ -21,26 +23,36 @@ class MainActivity : BaseActivity() {
     override fun modifyViews() {
         super.modifyViews()
 
-        for (i in 0..3) {
-
-            val newTask = Task()
-            newTask.title   = generateText()
-            newTask.content = generateText()
-            TaskManager().save(newTask)
-        }
-
+        killAfterIntent = false
         tasksRecyclerView.layoutManager = LinearLayoutManager(this)
         tasksRecyclerView.adapter = TaskRecyclerViewAdapter(this, allTasks())
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        if (tasksRecyclerView.adapter is TaskRecyclerViewAdapter) {
+            (tasksRecyclerView.adapter as TaskRecyclerViewAdapter).items = allTasks()
+            tasksRecyclerView.adapter.notifyDataSetChanged()
+        }
     }
 
     private fun allTasks(): List<Task> {
         return TaskManager().selectAll()
     }
 
-    fun generateText(): String {
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
 
-        val secureRandom = SecureRandom()
-        return BigInteger(130, secureRandom).toString(32)
+        // when is a control flow as 'switch case'
+        when(item?.itemId) {
+            R.id.action_new_task -> doIntent(CreateNewTaskActivity::class.java)
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.activity_main, menu)
+        return true
     }
 
 }

@@ -1,6 +1,5 @@
 package com.jgabrielfreitas.core.database
 
-import android.content.Context
 import com.jgabrielfreitas.core.Task
 
 /**
