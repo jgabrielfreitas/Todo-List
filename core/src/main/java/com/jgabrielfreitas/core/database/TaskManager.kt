@@ -9,12 +9,12 @@ class TaskManager {
 
     val taskDao = TaskDao()
 
-    fun save(task: Task) {
-        taskDao.save(task)
-    }
+    fun save(task: Task) = taskDao.save(task)
 
-    fun selectAll(): List<Task> {
-        return taskDao.selectAll()
-    }
+    fun update(task: Task) = save(task)
+
+    fun selectAll(): List<Task> = taskDao.selectAll()
+
+    fun findWithId(id:Long) : Task = taskDao.findTask(id)
 
 }

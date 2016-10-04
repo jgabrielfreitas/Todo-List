@@ -23,4 +23,8 @@ class TaskDao : Database<Task> {
     override fun selectAll(): List<Task> {
         return Select().all().from(Task::class.java).execute()
     }
+
+    fun findTask(id:Long) : Task {
+        return Select().all().from(Task::class.java).where("Id = ?", id).executeSingle()
+    }
 }

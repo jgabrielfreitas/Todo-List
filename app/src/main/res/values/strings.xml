@@ -6,4 +6,5 @@
     <string name="your_task">Sua tarefa</string>
     <string name="create_new_task">Criar nova tarefa</string>
     <string name="finish">Concluir</string>
+    <string name="msg_invalid_task">Tarefa inválida</string>
 </resources>

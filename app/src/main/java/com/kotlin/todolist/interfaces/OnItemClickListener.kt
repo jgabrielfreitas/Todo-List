@@ -5,6 +5,6 @@ package com.kotlin.todolist.interfaces
  */
 interface OnItemClickListener<T> {
 
-    fun onItemClick(item: T)
+    public fun onItemClick(item: T) : Unit
 
 }

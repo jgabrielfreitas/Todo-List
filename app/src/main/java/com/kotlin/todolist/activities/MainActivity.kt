@@ -3,13 +3,13 @@ package com.kotlin.todolist.activities
 import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import com.jgabrielfreitas.core.Task
 import com.jgabrielfreitas.core.activity.BaseActivity
 import com.jgabrielfreitas.core.database.TaskManager
 import com.jgabrielfreitas.layoutid.annotations.InjectLayout
 import com.kotlin.todolist.R
 import com.kotlin.todolist.adapter.TaskRecyclerViewAdapter
+import com.kotlin.todolist.extentions.doIntent
 import com.kotlin.todolist.interfaces.OnItemClickListener
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -47,12 +47,10 @@ class MainActivity : BaseActivity(), OnItemClickListener<Task> {
         }
     }
 
-    private fun allTasks(): List<Task> {
-        return TaskManager().selectAll()
-    }
+    private fun allTasks(): List<Task> = TaskManager().selectAll()
 
     override fun onItemClick(item: Task) {
-        Toast.makeText(this, item.title, Toast.LENGTH_SHORT).show()
+        doIntent(EditTaskActivity::class.java, item.id)
     }
 
 }

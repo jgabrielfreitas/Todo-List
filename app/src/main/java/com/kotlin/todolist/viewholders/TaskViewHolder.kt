@@ -30,8 +30,8 @@ class TaskViewHolder(view: View) : ItemViewHolder<Task>(view) {
         taskContentTextView!!.text = item.content
         rootRelativeLayout?.setOnClickListener {
 
-            val listener : OnItemClickListener<Task> = getListener(Task::class.java) as OnItemClickListener<*>
-            listener.onItemClick(item)
+            val taskOnItemClickListener: OnItemClickListener<Task> = getListener(OnItemClickListener::class.java) as OnItemClickListener<Task>
+            taskOnItemClickListener?.onItemClick(item)
         }
     }
 }

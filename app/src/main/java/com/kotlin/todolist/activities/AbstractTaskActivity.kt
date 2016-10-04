@@ -29,4 +29,6 @@ abstract class AbstractTaskActivity : BaseWithBackButtonActivity() {
 
     abstract fun onDoneButtonClicked()
 
+    abstract fun validateTask() : Boolean
+
 }
