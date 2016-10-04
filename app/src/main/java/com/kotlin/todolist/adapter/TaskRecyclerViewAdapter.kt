@@ -1,12 +1,9 @@
 package com.kotlin.todolist.adapter
 
 import android.content.Context
-
 import com.jgabrielfreitas.core.Task
-import com.kotlin.todolist.activities.MainActivity
 import com.kotlin.todolist.interfaces.OnItemClickListener
 import com.kotlin.todolist.viewholders.TaskViewHolder
-
 import uk.co.ribot.easyadapter.EasyRecyclerAdapter
 import uk.co.ribot.easyadapter.ItemViewHolder
 

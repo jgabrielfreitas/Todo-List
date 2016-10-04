@@ -2,14 +2,9 @@ package com.kotlin.todolist.decorator
 
 import android.content.Context
 import android.graphics.Canvas
-import android.graphics.drawable.Drawable
 import android.support.v4.content.ContextCompat
 import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.RecyclerView.ItemDecoration
-import android.support.v7.widget.RecyclerView.LayoutParams
-import android.support.v7.widget.RecyclerView.State
-import android.view.View
-
+import android.support.v7.widget.RecyclerView.*
 import com.kotlin.todolist.R
 
 /**
