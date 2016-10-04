@@ -17,4 +17,6 @@ class TaskManager {
 
     fun findWithId(id:Long) : Task = taskDao.findTask(id)
 
+    fun delete(task: Task) = taskDao.delete(task)
+
 }

@@ -7,4 +7,6 @@
     <string name="create_new_task">Criar nova tarefa</string>
     <string name="finish">Concluir</string>
     <string name="msg_invalid_task">Tarefa inválida</string>
+    <string name="msg_task_removed">Tarefa removida</string>
+    <string name="no_tasks_to_show">Não há tarefas para exibir</string>
 </resources>
