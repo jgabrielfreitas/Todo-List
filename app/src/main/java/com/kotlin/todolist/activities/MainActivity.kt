@@ -5,7 +5,6 @@ import android.support.v7.widget.RecyclerView.ViewHolder
 import android.support.v7.widget.helper.ItemTouchHelper
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.view.View.GONE
 import android.view.View.VISIBLE
 import com.jgabrielfreitas.core.Task
@@ -19,6 +18,7 @@ import com.kotlin.todolist.decorator.SimpleDividerItemDecoration
 import com.kotlin.todolist.decorator.SwipeDecorator
 import com.kotlin.todolist.extentions.doIntent
 import com.kotlin.todolist.extentions.toast
+import com.kotlin.todolist.extentions.withEmoji
 import com.kotlin.todolist.interfaces.OnItemClickListener
 import com.kotlin.todolist.interfaces.RecyclerViewSwipeCallback
 import kotlinx.android.synthetic.main.activity_main.*

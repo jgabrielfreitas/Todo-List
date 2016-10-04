@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Todo-List</string>
+    <string name="tasks">Tasks</string>
+    <string name="new_task">New Task</string>
+    <string name="title_task">Your new tasks title</string>
+    <string name="your_task">What\'s on your mind?</string>
+    <string name="create_new_task">Create a new task</string>
+    <string name="finish">Finish</string>
+    <string name="msg_invalid_task">Ooops..Invalid task</string>
+    <string name="msg_task_removed">Tasks deleted</string>
+    <string name="no_tasks_to_show">No tasks to show :(</string>
+</resources>
