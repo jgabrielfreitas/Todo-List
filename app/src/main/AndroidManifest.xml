@@ -20,8 +20,13 @@
         </activity>
         <activity
             android:name=".activities.CreateNewTaskActivity"
+            android:exported="true"
             android:label="@string/create_new_task" />
-        <activity android:name=".activities.EditTaskActivity"></activity>
+        <activity android:name=".activities.EditTaskActivity" />
+
+        <meta-data
+            android:name="android.app.shortcuts"
+            android:resource="@xml/shortcuts"/>
     </application>
 
 </manifest>

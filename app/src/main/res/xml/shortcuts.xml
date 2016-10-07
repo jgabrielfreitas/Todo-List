@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut icon="@drawable/ic_action_content_add"
+        enabled="true" shortcutId="@+id/shortcut_new_task"
+        shortcutShortLabel="@string/create_new_task" >
+        <intent android:targetPackage="com.kotlin.todolist"
+            android:targetClass="com.kotlin.todolist.activities.CreateNewTaskActivity"
+            android:action="android.intent.action.VIEW"
+            android:data="http://example.com/some_data"/>
+    </shortcut>
+</shortcuts>
