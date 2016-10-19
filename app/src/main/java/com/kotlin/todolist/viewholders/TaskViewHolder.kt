@@ -1,13 +1,11 @@
 package com.kotlin.todolist.viewholders
 
+import android.support.v7.widget.CardView
 import android.view.View
-import android.widget.RelativeLayout
 import android.widget.TextView
-
 import com.jgabrielfreitas.core.Task
 import com.kotlin.todolist.R
 import com.kotlin.todolist.interfaces.OnItemClickListener
-
 import uk.co.ribot.easyadapter.ItemViewHolder
 import uk.co.ribot.easyadapter.PositionInfo
 import uk.co.ribot.easyadapter.annotations.LayoutId
@@ -22,7 +20,7 @@ class TaskViewHolder(view: View) : ItemViewHolder<Task>(view) {
 
     @ViewId(R.id.taskTitleTextView)   val taskTitleTextView   : TextView? = null
     @ViewId(R.id.taskContentTextView) val taskContentTextView : TextView? = null
-    @ViewId(R.id.rootRelativeLayout)  val rootRelativeLayout  : RelativeLayout? = null
+    @ViewId(R.id.rootRelativeLayout)  val rootRelativeLayout  : CardView? = null
 
     override fun onSetValues(item: Task, positionInfo: PositionInfo) {
 
