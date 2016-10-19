@@ -26,7 +26,7 @@ open class BaseWithBackButtonActivity : BaseActivity() {
     }
 
     protected fun onUpButtonClicked() {
-        finish()
+        killThisActivity()
     }
 
 }

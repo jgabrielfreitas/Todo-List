@@ -12,7 +12,11 @@ import com.activeandroid.annotation.Table
 @Table(name = "Task")
 class Task : Model() {
 
-    @Column(name = "TITLE")   var title   : String? = null
-    @Column(name = "CONTENT") var content : String? = null
+    val ON_TRASH  = 1
+    val NON_TRASH = 2
+
+    @Column(name = "TITLE")   var title        : String? = null
+    @Column(name = "CONTENT") var content      : String? = null
+    @Column(name = "TRASH")   var movedToTrash : Int     = NON_TRASH
 
 }

@@ -27,6 +27,12 @@
         <meta-data
             android:name="android.app.shortcuts"
             android:resource="@xml/shortcuts"/>
+        <meta-data
+            android:name="AA_Database"
+            android:value="task.db"/>
+        <meta-data
+            android:name="AA_DB_version"
+            android:value="3"/>
     </application>
 
 </manifest>

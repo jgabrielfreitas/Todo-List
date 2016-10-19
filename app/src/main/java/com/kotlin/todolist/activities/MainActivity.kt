@@ -71,7 +71,7 @@ class MainActivity : BaseActivity(), OnItemClickListener<Task>, RecyclerViewSwip
         val taskToDelete = allTasks()[viewHolder.adapterPosition]
 
         (tasksRecyclerView.adapter as TaskRecyclerViewAdapter).removeItem(taskToDelete)
-        taskManager.delete(taskToDelete)
+        taskManager.moveToTrash(taskToDelete)
         toast(getString(msg_task_removed))
         updateUiTask()
     }

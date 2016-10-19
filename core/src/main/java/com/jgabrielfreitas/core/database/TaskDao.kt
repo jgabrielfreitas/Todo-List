@@ -8,6 +8,9 @@ import com.jgabrielfreitas.core.Task
  */
 class TaskDao : Database<Task> {
 
+    val ON_TRASH  = 1
+    val NON_TRASH = 2
+
     override fun delete(any: Task) {
         any.delete()
     }
@@ -26,5 +29,13 @@ class TaskDao : Database<Task> {
 
     fun findTask(id:Long) : Task {
         return Select().all().from(Task::class.java).where("Id = ?", id).executeSingle()
+    }
+
+    fun selectAllNonTrash() : List<Task> {
+        return Select().all().from(Task::class.java).where("TRASH = ?", NON_TRASH).execute()
+    }
+
+    fun selectAllOnTrash() : List<Task> {
+        return Select().all().from(Task::class.java).where("TRASH = ?", ON_TRASH).execute()
     }
 }

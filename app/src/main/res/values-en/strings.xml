@@ -7,6 +7,6 @@
     <string name="create_new_task">Create a new task</string>
     <string name="finish">Finish</string>
     <string name="msg_invalid_task">Ooops..Invalid task</string>
-    <string name="msg_task_removed">Tasks deleted</string>
+    <string name="msg_task_removed">Task moved to trash</string>
     <string name="no_tasks_to_show">No tasks to show :(</string>
 </resources>
