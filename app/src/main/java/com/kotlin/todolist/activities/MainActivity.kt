@@ -62,7 +62,7 @@ class MainActivity : BaseActivity(), OnItemClickListener<Task>, RecyclerViewSwip
         }
     }
 
-    private fun allTasks(): List<Task> = taskManager.selectAll()
+    private fun allTasks(): List<Task> = taskManager.selectAllNonTrash()
 
     override fun onItemClick(item: Task) = doIntent(EditTaskActivity::class.java, item.id)
 
