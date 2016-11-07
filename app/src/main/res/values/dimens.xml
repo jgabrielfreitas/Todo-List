@@ -4,4 +4,5 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="space_default">20dp</dimen>
     <dimen name="half_space_default">10dp</dimen>
+    <dimen name="double_space_default">40dp</dimen>
 </resources>

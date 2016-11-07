@@ -9,4 +9,12 @@
     <string name="msg_invalid_task">Tarefa inválida</string>
     <string name="msg_task_removed">Tarefa movida para lixeira</string>
     <string name="no_tasks_to_show">Não há tarefas para exibir</string>
+    <string name="done">FECHAR</string>
+    <string name="skip">PULAR</string>
+    <string name="title_sync">Sincronismo</string>
+    <string name="title_check">Tarefas</string>
+    <string name="title_focus">Foco</string>
+    <string name="msg_now_you_can_sync_tasks">Agora você pode sincronizar as suas tarefas com a nuvem!</string>
+    <string name="msg_easy_tasks">E acompanhar o progresso em todas os seus dispositivos!</string>
+    <string name="msg_keep_in_focus">Mantenha o foco nas suas atividades!</string>
 </resources>

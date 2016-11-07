@@ -1,27 +1,28 @@
 package com.kotlin.todolist.activities
 
-import android.R.color.white
 import android.content.Intent
-import android.graphics.Color
-import android.graphics.Color.parseColor
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v4.content.ContextCompat
 import com.github.paolorotolo.appintro.AppIntro
-import com.github.paolorotolo.appintro.AppIntroFragment
 import com.kotlin.todolist.R
+import com.kotlin.todolist.R.string.*
+import com.kotlin.todolist.fragments.SlideFragment
 
 class WelcomeActivity : AppIntro() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        addSlide(AppIntroFragment.newInstance("Sincronismo", "Agora você pode sincronizar as suas tarefas com a nuvem!", R.drawable.cloud, android.R.color.background_light))
-        addSlide(AppIntroFragment.newInstance("Sincronismo", "Agora você pode sincronizar as suas tarefas com a nuvem!", R.drawable.cloud, R.color.cloud_background))
-        addSlide(AppIntroFragment.newInstance("Sincronismo", "Agora você pode sincronizar as suas tarefas com a nuvem!", R.drawable.cloud, R.color.cloud_background))
+//        addSlide(newInstance(getString(title_sync), getString(msg_now_you_can_sync_tasks), cloud, R.color.cloud_background))
+//        addSlide(newInstance(getString(title_check), getString(msg_easy_tasks), check, R.color.cloud_background))
+//        addSlide(newInstance(getString(title_focus), getString(msg_keep_in_focus), man, R.color.cloud_background))
+//        addSlide(newInstance(getString(title_focus), getString(msg_keep_in_focus), man, R.color.cloud_background))
+        addSlide(SlideFragment(getString(title_sync)))
+        addSlide(SlideFragment(getString(title_check)))
+        addSlide(SlideFragment(getString(title_focus)))
 
-        setSeparatorColor(white)
-
+        setSkipText(getString(R.string.skip))
+        setDoneText(getString(R.string.done))
     }
 
     override fun onDonePressed(currentFragment: Fragment?) = startApplication()
