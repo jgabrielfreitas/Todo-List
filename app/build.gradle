@@ -26,20 +26,26 @@ android {
 }
 
 dependencies {
+
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.4.0'
+
     // kotlin
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
     // my libraries
     compile 'com.github.jgabrielfreitas:Bases:0.0.1'
     compile project(':core')
 
     // views
     compile 'uk.co.ribot:easyadapter:1.5.0@aar'
-    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.github.paolorotolo:appintro:4.1.0'
     compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
     compile 'com.github.marcelosantosti:Masked-Edittext:1.0.8'
+
+    // tests
+    testCompile 'junit:junit:4.12'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
