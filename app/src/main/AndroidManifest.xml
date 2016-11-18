@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.kotlin.todolist">
+    package="com.kotlin.todolist">
 
     <application
         android:name="com.jgabrielfreitas.core.application.CoreApplication"
@@ -15,25 +15,30 @@
         <activity
             android:name=".activities.CreateNewTaskActivity"
             android:exported="true"
-            android:label="@string/create_new_task"/>
-        <activity android:name=".activities.EditTaskActivity"/>
+            android:label="@string/create_new_task" />
+        <activity android:name=".activities.EditTaskActivity" />
 
         <meta-data
             android:name="android.app.shortcuts"
-            android:resource="@xml/shortcuts"/>
+            android:resource="@xml/shortcuts" />
         <meta-data
             android:name="AA_DB_NAME"
-            android:value="task.db"/>
+            android:value="task.db" />
         <meta-data
             android:name="AA_DB_VERSION"
-            android:value="2"/>
+            android:value="2" />
 
-        <activity android:name=".activities.WelcomeActivity"
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".activities.ValidatorActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>

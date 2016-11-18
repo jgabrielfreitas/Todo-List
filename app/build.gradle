@@ -13,6 +13,10 @@ android {
         versionCode 2
         versionName "1.1"
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+
+        buildConfigField 'String', 'INTRO_DONE', '\"intro done yeah\"'
+        buildConfigField 'String', 'KEY_INTRO_DONE', '\"INTRO_DONE\"'
+
     }
     buildTypes {
         release {
