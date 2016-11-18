@@ -4,5 +4,7 @@
     <color name="colorPrimaryDark">#193441</color>
     <color name="colorAccent">#91AA9D</color>
     <color name="dark_gray">#91AA9D</color>
-    <color name="cloud_background">#0097A7</color>
-</resources>
+    <color name="cloud_background">#069586</color>
+    <color name="check_background">#1B94FA</color>
+    <color name="person_background">#3C4EBB</color>
+ </resources>

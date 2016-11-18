@@ -3,13 +3,13 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
 
     defaultConfig {
         applicationId "com.kotlin.todolist"
         minSdkVersion 19
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 2
         versionName "1.1"
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
@@ -39,9 +39,10 @@ dependencies {
     // views
     compile 'uk.co.ribot:easyadapter:1.5.0@aar'
     compile 'com.github.paolorotolo:appintro:4.1.0'
-    compile 'com.android.support:cardview-v7:23.4.0'
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:25.0.0'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile 'com.github.jgabrielfreitas:DataController:1.1.1'
     compile 'com.github.marcelosantosti:Masked-Edittext:1.0.8'
 
     // tests
